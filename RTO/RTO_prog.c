@@ -45,9 +45,9 @@ void RTO_voidSchadualar(void)
 	for(local_u8LoopCount=0 ; local_u8LoopCount<RTO_u8TASKS_NUM ;local_u8LoopCount++)
 		{
 			if(TCB_ARR[local_u8LoopCount].counter==1)
-				{
-					TCB_ARR[local_u8LoopCount].ptr();
-				}
+			{
+				TCB_ARR[local_u8LoopCount].ptr();
+			}
 		}
 }
 

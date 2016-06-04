@@ -19,11 +19,12 @@ u8 m=1 ,flg=0,f=0;
 u16 ADCREAD=0 , c=0 , count=0 ;
  u8 old_ADC,flag1=0 ;
 
- void step() ;
+void step() ;
 void ADC_conv();
 void Write_LCD();
 void Read_sw(void);
 void write_name();
+
 void main ()
 {
 
