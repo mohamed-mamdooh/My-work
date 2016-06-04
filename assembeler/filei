@@ -1,0 +1,19 @@
+CP	R0 R1
+                                                                                           MOV	R0 R1
+                                                                                          MUL R0 R1
+                                                                                          SBI DDRA 3
+                                                                                         OR R3 R4
+ 
+                                                                                         EOR R3 R4
+                                                                                          SBI  DDRA 3 
+                                                                                       CBI  DDRC 2 
+                                                                                       RET
+ DDRC 2 
+                                                                                       ADC  R17 R18
+                                                                                       SUB  R19 R20
+                                                                                       SBIC DDRB 1
+                                                                                        SBIS DDRD 4
+                                                                                        SEI
+ DDRD 4
+                                                                                        CLC  DDRD 4
+                                                                                        
